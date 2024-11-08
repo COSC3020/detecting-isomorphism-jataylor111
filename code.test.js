@@ -8,9 +8,10 @@ let graph1 = [[1, 2], [0, 2], [0, 1]];
 let graph2 = [[1, 2], [0, 2], [0, 1]];
 assert(are_isomorphic(graph1, graph2) === true, "Test Case 1 Failed");
 
+// Two non-idential graphs, isomorphic
 let graph3 = [[1, 3], [0, 2], [1], [0]];
 let graph4 = [[1, 2], [0, 3], [0], [1]];
-assert(are_isomorphic(graph3, graph4) === false, "Test Case 2 Failed");
+assert(are_isomorphic(graph3, graph4) === true, "Test Case 2 Failed");
 
 // Two graphs with same number of vertices but different connections, not isomorphic
 let graph5 = [[1, 2], [0, 2], [0, 1]];
